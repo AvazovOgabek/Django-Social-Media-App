@@ -1,0 +1,78 @@
+ body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f8f8f8;
+ }
+
+ .profile {
+   max-width: 600px;
+   margin: 20px auto;
+   padding: 20px;
+   background-color: #fff;
+   border-radius: 12px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .profile-header {
+   text-align: center;
+   padding-bottom: 20px;
+   border-bottom: 1px solid #eee;
+ }
+
+ .profile-img {
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 4px solid #fff;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .profile-name {
+   margin-top: 10px;
+   font-size: 24px;
+   color: #333;
+ }
+
+ .follow-stats {
+   display: flex;
+   justify-content: center;
+   margin-top: 15px;
+ }
+
+ .stat {
+   text-align: center;
+   padding: 0 15px;
+ }
+
+ .stat h3 {
+   margin-bottom: 5px;
+   font-size: 16px;
+   color: #333;
+ }
+
+ .stat p {
+   margin: 0;
+   font-size: 20px;
+   color: #007bff;
+   font-weight: bold;
+ }
+
+ .profile-body {
+   display: flex;
+   justify-content: space-around;
+   padding: 20px 0;
+ }
+
+ /* Media query for responsiveness */
+ @media screen and (max-width: 480px) {
+   .profile-img {
+     width: 150px;
+     height: 150px;
+   }
+ }
+
+ .profile-actions {
+   margin-left: 43%;
+ }

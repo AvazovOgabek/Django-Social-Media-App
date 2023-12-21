@@ -1,0 +1,354 @@
+.blog-card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-right: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 600px;
+  width: 100%;
+  margin-left: 30%;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 2px solid #3897f0;
+  /* Example border color */
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.author-details {
+  font-size: 14px;
+  color: #666;
+}
+
+.blog-header img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.blog-body {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.interactions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.like-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.like-btn:hover {
+  color: #ed4956;
+  /* Instagram red color */
+}
+
+.chat-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #262626;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.chat-btn:hover {
+  color: #3897f0;
+}
+
+.send-post-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #262626;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.send-post-btn:hover {
+  color: #3897f0;
+}
+
+.save-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #8e8e8e;
+  font-weight: bold;
+  font-size: 14px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.save-btn:hover {
+  color: #8e8e8e;
+}
+
+.action-btn:hover {
+  filter: brightness(90%);
+}
+
+.chat-container {
+  display: none;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.chat-container.show-chat {
+  display: block;
+  max-height: 300px;
+  opacity: 1;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.chat-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.close-chat-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+.close-chat-btn:focus {
+  outline: none;
+}
+
+.chat-messages {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.sender-profile {
+  margin-right: 10px;
+}
+
+.sender-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.message-text {
+  padding: 8px 12px;
+  border-radius: 6px;
+  word-wrap: break-word;
+}
+
+.message.received .message-text {
+  background-color: #fafafa;
+  color: #333;
+}
+
+.message.sent .message-text {
+  background-color: #e4f9f5;
+  color: #333;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.message-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.send-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3897f0;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #3477db;
+}
+
+.like {
+  position: absolute;
+}
+
+.chat {
+  position: absolute;
+  margin-left: 50px;
+}
+
+.send {
+  position: absolute;
+  margin-left: 100px;
+}
+
+.save {
+  margin-left: 500px;
+}
+
+.likes_count {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.followers-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* Enable smooth scrolling on iOS */
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  /* Smooth scrolling behavior */
+  -ms-overflow-style: none;
+  /* Hide scrollbar in IE and Edge */
+  scrollbar-width: none;
+  /* Hide scrollbar in Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar in Chrome, Safari, and Opera */
+}
+
+.follower-card {
+  flex: 0 0 auto;
+  width: 120px;
+  height: 120px;
+  margin-right: 12px;
+  background-color: #efefef;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.follower-card:last-child {
+  margin-right: 0;
+}
+
+.follower-card:hover {
+  transform: translateY(-5px);
+  background-color: #f9f9f9;
+}
+
+.follower-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.follower-card p {
+  font-weight: bold;
+  color: #333;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,137 @@
+ .container {
+     width: 40%;
+     height: 500px;
+     margin: 50px auto;
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     perspective: 1000px;
+ }
+
+ h2 {
+     text-align: center;
+     color: #333;
+     transform: rotateX(25deg);
+ }
+
+ .form-container {
+     display: flex;
+     flex-direction: column;
+     animation: formScale 0.5s ease-in-out;
+ }
+
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+ .custom-file-upload {
+     display: inline-block;
+     padding: 10px 20px;
+     font-size: 16px;
+     cursor: pointer;
+     background-color: #007bff;
+     color: #fff;
+     border-radius: 5px;
+     border: none;
+     transition: background-color 0.3s ease-in-out;
+ }
+
+ .custom-file-upload:hover {
+     background-color: #0056b3;
+ }
+
+ input[type="file"] {
+     display: none;
+ }
+
+ textarea {
+     width: 100%;
+     max-height: 200px;
+     padding: 10px;
+     font-size: 16px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     resize: vertical;
+     transform: rotateX(-25deg);
+ }
+
+ input[type="submit"] {
+     padding: 10px 20px;
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease-in-out;
+     transform: rotateY(25deg);
+ }
+
+ input[type="submit"]:hover {
+     background-color: #0056b3;
+ }
+
+ .text-muted {
+     font-size: 12px;
+     color: #888;
+     margin-top: 5px;
+ }
+
+ /* Animation */
+ @keyframes formScale {
+     from {
+         transform: scale(0);
+     }
+
+     to {
+         transform: scale(1);
+     }
+ }
+
+ .footer {
+     background-color: #333;
+     color: #fff;
+     text-align: center;
+     padding: 20px 0;
+     position: relative;
+     margin-top: 50px;
+     transform-style: preserve-3d;
+ }
+
+ .footer:before {
+     content: '';
+     position: absolute;
+     top: -5px;
+     left: 0;
+     width: 100%;
+     height: 10px;
+     background: linear-gradient(to right, #333 0%, #fff 25%, #333 50%, #fff 75%, #333 100%);
+ }
+
+ .footer h3 {
+     margin-bottom: 10px;
+ }
+
+ /* Textarea Styles */
+ textarea {
+     width: calc(100% - 40px);
+     padding: 10px;
+     font-size: 16px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     resize: vertical;
+     margin-bottom: 20px;
+     transform: rotateX(-25deg);
+     transition: border-color 0.3s ease-in-out;
+ }
+
+ textarea:focus {
+     outline: none;
+     border-color: #007bff;
+ }
+
+ .text-muted {
+     font-size: 12px;
+     color: #888;
+     margin-top: 5px;
+ }
