@@ -3,13 +3,12 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
-  margin-right: 10px;
+  margin: 15px auto;
+  max-width: 600px;
+  width: calc(100% - 30px);
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  max-width: 600px;
-  width: 100%;
-  margin-left: 30%;
 }
 
 .blog-card:hover {
@@ -30,7 +29,6 @@
   margin-right: 12px;
   object-fit: cover;
   border: 2px solid #3897f0;
-  /* Example border color */
 }
 
 .author-name {
@@ -97,7 +95,6 @@
 
 .like-btn:hover {
   color: #ed4956;
-  /* Instagram red color */
 }
 
 .chat-btn {
@@ -301,19 +298,14 @@ h1 {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  /* Enable smooth scrolling on iOS */
   padding-bottom: 10px;
   scroll-behavior: smooth;
-  /* Smooth scrolling behavior */
   -ms-overflow-style: none;
-  /* Hide scrollbar in IE and Edge */
   scrollbar-width: none;
-  /* Hide scrollbar in Firefox */
 }
 
 .carousel::-webkit-scrollbar {
   display: none;
-  /* Hide scrollbar in Chrome, Safari, and Opera */
 }
 
 .follower-card {

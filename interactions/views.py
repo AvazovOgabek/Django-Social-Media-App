@@ -1,7 +1,8 @@
-from django.shortcuts import render, redirect, get_object_or_404
-from .models import Post, Like, Save, Comment
+from django.shortcuts import render, redirect
+from .models import Post, Like, Save
 from django.contrib.auth.decorators import login_required
 from django.db.models import Count
+from profiles.models import Profile
 
 @login_required(login_url='signin')
 def create_post_view(request):
@@ -54,7 +55,10 @@ def saves(request):
     saves = [saved_post.post for saved_post in user_saved_posts]
     
     saved_post_ids = [post.id for post in saves]
-
+    user_profile = Profile.objects.get(user=request.user)
+    
+    profiles = user_profile.follows.all()
+    
     posts = (
         Post.objects.filter(id__in=saved_post_ids)
         .annotate(like_count=Count('post_likes'))
@@ -67,4 +71,5 @@ def saves(request):
         'posts': posts,
         'liked_posts' : liked_posts,
         'saved_posts' : saved_posts,
+        'profiles' : profiles,
     })

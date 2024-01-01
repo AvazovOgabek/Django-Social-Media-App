@@ -8,7 +8,6 @@
    text-align: center;
  }
 
- /* Profile image styles */
  .profile-img {
    width: 200px;
    height: 200px;
@@ -19,7 +18,6 @@
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
  }
 
- /* Counts section styles */
  .counts {
    display: flex;
    justify-content: space-around;

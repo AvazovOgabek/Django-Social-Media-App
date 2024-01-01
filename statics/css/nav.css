@@ -7,11 +7,16 @@ body {
 }
 
 nav {
+  margin-top: -150px;
   width: 100%;
   padding: 16px 20px 30px 20px;
   display: flex;
   transition: 0.3s ease-out;
   color: rgb(0, 0, 0);
+  position: fixed;
+
+  background-color: #ffffff;
+  z-index: 1000;
 }
 
 nav.mask {
